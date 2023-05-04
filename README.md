@@ -3,7 +3,7 @@
 # 해커런 &ndash; 해커그라운드
 
 <div style="text-align: center;">
-  <img src="assets/banner-1920x480.png.png" alt="해커그라운드 배너" width="100%"/>
+  <img src="assets/banner-1920x480.png" alt="해커그라운드 배너" width="100%"/>
 </div>
 
 해커그라운드는 정보 소외 지역의 개발자들과 함께 애저 클라우드를 활용해서 당면한 지역의 현안 문제를 해결해 보는 해커톤 이벤트입니다. (*마케팅 프로모션 문구 필요*)
