@@ -2,7 +2,9 @@
 
 # HackaLearn &ndash; Hackers Ground
 
-[Banner image]
+<div style="text-align: center;">
+  <img src="assets/banner-1920x480.png" alt="Hero - Hackers Ground" width="100%"/>
+</div>
 
 Hackers Ground is a hackathon event where developers from information-underserved regions use Azure Cloud to solve current issues in the region at hand. (*requires marketing promotional copy*)
 
