@@ -1,4 +1,4 @@
-👉 **[For English](./README.en.md)**- 👈
+👉 **[For English](./README.en.md)** 👈
 
 # 해커런 &ndash; 해커그라운드
 
@@ -6,9 +6,9 @@
   <img src="assets/banner-1920x480.png" alt="해커그라운드 배너" width="100%"/>
 </div>
 
-**해커그라운드**는 대구/경북 지역의 청년 개발자들과 함께 [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 활용해 당면한 지역의 현안 문제를 해결하는 해커톤입니다.
+**해커그라운드** 이벤트는 대구/경북 지역의 청년 개발자들과 함께 [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 활용해 당면한 지역의 현안 문제를 해결하는 해커톤입니다.
 
-**해커그라운드 클라우드 스킬 챌린지(온라인 사전교육)**는 주어진 기간 안에 관련 지식을 직접 배워서 해커톤에 적용하는 이벤트입니다. 이번 챌린지의 주제는 바로 6대 Microsoft 기초 과정입니다. 3주간 각자 공부하고 해커그라운드 해커톤에 참여해서 직접 서비스를 만들어 보는 해커그라운드 클라우드 스킬 챌린지 이벤트! 도전해 보세요. 푸짐한 상품이 기다립니다!
+**해커그라운드 클라우드 스킬 챌린지(온라인 사전교육)** 이벤트는 주어진 기간 안에 관련 지식을 직접 배워서 해커톤에 적용하는 이벤트입니다. 이번 챌린지의 주제는 바로 6대 Microsoft 기초 과정입니다. 3주간 각자 공부하고 해커그라운드 해커톤에 참여해서 직접 서비스를 만들어 보는 해커그라운드 클라우드 스킬 챌린지 이벤트! 도전해 보세요. 푸짐한 상품이 기다립니다!
 
 ## ✉️ 해커그라운드 해커톤/클라우드 스킬 챌린지 안내 메일 신청
 
@@ -154,10 +154,13 @@
 ## 🥑 주최
 
 이 행사는 Microsoft 및 경북대학교에서 주최합니다.
+&nbsp;
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-microsoft.png" alt="Microsoft 로고" width="251" height="113"/></a>
-  <a href="https://www.knu.ac.kr" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-knu.png" alt="경북대학교 로고" width="180"/></a>
+  <br/>
+
+  <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-microsoft-cropped.png" alt="Microsoft 로고" width="251"/></a>
+  <a href="https://www.knu.ac.kr" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-knu.png" alt="경북대학교 로고" width="210"/></a>
 </div>
 
 ## 🥑 주관
