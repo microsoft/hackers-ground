@@ -151,12 +151,25 @@
 해커그라운드는 참가자 여러분들 모두가 행사 기간 중 마음 편안하게 참여하실 수 있게끔 모두에게 공정하고 상호 존중하도록 행동 강령을 정하고 있습니다. 좀 더 자세한 내용은 [행동 강령][coc] 페이지를 참고해 주세요.
 
 
-## 🥑 후원
+## 🥑 주최
 
-이 행사는 Microsoft에서 후원합니다.
+이 행사는 Microsoft 및 경북대학교에서 주최합니다.
 
 <div style="text-align: left;">
-    <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-microsoft.png" alt="Microsoft 로고" width="251" height="113"/></a>
+  <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-microsoft.png" alt="Microsoft 로고" width="251" height="113"/></a>
+  <img src="assets/Logo.png" alt="경북대학교 로고" width="251", height="70"/>
+</div>
+
+## 🥑 주관
+
+이 행사는 교육부, 한국연구재단, 대구광역시, 대구경북지역혁신플랫폼 전자정보기기사업단, (주)해달프로그래밍, 대구경북대학학생회 연합에서 주관합니다.
+
+<div style="align: center;">
+  <img src="assets/1.png" alt="교육부 로고" width="15%"/>
+  <img src="assets/2.png" alt="대구광역시 로고" width="15%"/>
+  <img src="assets/3.jpg" alt="연구재단 로고" width="15%"/>
+  <img src="assets/4.jpg" alt="플랫폼 로고" width="10%"/>
+  <img src="assets/5.jpg" alt="사업단 로고" width="10%"/>
 </div>
 
 
@@ -164,3 +177,4 @@
 [qna]: https://github.com/microsoft/hackers-ground/issues
 [privacy]: https://github.com/microsoft/hackers-ground/blob/main/PRIVACY_POLICY.md
 [coc]: https://github.com/microsoft/hackers-ground/blob/main/CODE_OF_CONDUCT.md
+
