@@ -168,11 +168,11 @@
 <div style="display: flex; justify-content: center; align-items: center;">
   <br/>
 
-  <img src="assets/logo-moe.png" alt="교육부 로고" width="15%"/>&nbsp;
-  <img src="assets/logo-daegu.png" alt="대구광역시 로고" width="15%"/>&nbsp;
-  <img src="assets/logo-nrf.jpg" alt="한국연구재단 로고" width="15%"/>&nbsp;
-  <img src="assets/logo-dgplatform.jpg" alt="대구경북지역혁신플랫폼 로고" width="10%"/>&nbsp;
-  <img src="assets/logo-dgei.jpg" alt="대구경북지역혁신플랫폼 전자기기사업단 로고" width="10%"/>
+  <a href="https://www.moe.go.kr/" target="_blank"><img src="assets/logo-moe.png" alt="교육부 로고" width="15%"/></a>&nbsp;
+  <a href="https://www.daegu.go.kr/" target="_blank"><img src="assets/logo-daegu.png" alt="대구광역시 로고" width="15%"/></a>&nbsp;
+  <a href="https://www.nrf.re.kr/" target="_blank"><img src="assets/logo-nrf.jpg" alt="한국연구재단 로고" width="15%"/></a>&nbsp;
+  <a href="https://www.dgplatform.or.kr/" target="_blank"><img src="assets/logo-dgplatform.jpg" alt="대구경북지역혁신플랫폼 로고" width="10%"/></a>&nbsp;
+  <a href="https://dgei.or.kr/" target="_blank"><img src="assets/logo-dgei.jpg" alt="대구경북지역혁신플랫폼 전자기기사업단 로고" width="10%"/></a>
 </div>
 
 
