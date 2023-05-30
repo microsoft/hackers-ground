@@ -104,10 +104,10 @@
 - 장소: 경북대학교 강의실 (장소 추후 공지)
 - 내용:
 
-  | &nbsp; | 강의실 1 | 강의실 2 |
-  |----------|----------|----------|
-  | 1교시 | 애저 클라우드 기초 | 애저 클라우드 기초 |
-  | 2교시 | GitHub 코드스페이스 및 코파일럿 기초 | GitHub 코드스페이스 및 코파일럿 기초 |
+  | &nbsp; | 강의실 1 | 강의실 2 | 강의실 3 |
+  |----------|----------|----------|----------|
+  | 1교시 | 애저 클라우드 기초 | 애저 클라우드 기초 | 애저 클라우드 기초 |
+  | 2교시 | GitHub 코드스페이스 및 코파일럿 기초 | GitHub 코드스페이스 및 코파일럿 기초 | GitHub 코드스페이스 및 코파일럿 기초 |
 
 
 ## 💰 해커그라운드 해커톤 참가자 베네핏
@@ -159,7 +159,7 @@
 <div style="display: flex; justify-content: center; align-items: center;">
   <br/>
 
-  <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-microsoft-cropped.png" alt="Microsoft 로고" width="251"/></a>
+  <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-microsoft-cropped.png" alt="Microsoft 로고" width="251"/></a>&nbsp;
   <a href="https://www.knu.ac.kr" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-knu.png" alt="경북대학교 로고" width="210"/></a>
 </div>
 
