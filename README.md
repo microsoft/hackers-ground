@@ -1,4 +1,4 @@
-👉 **[For English](./README.en.md)*- 👈
+👉 **[For English](./README.en.md)**- 👈
 
 # 해커런 &ndash; 해커그라운드
 
@@ -8,13 +8,13 @@
 
 **해커그라운드**는 대구/경북 지역의 청년 개발자들과 함께 [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 활용해 당면한 지역의 현안 문제를 해결하는 해커톤입니다.
 
-**해커그라운드 클라우드 스킬 챌린지**는 주어진 기간 안에 관련 지식을 직접 배워서 해커톤에 적용하는 이벤트입니다. 이번 챌린지의 주제는 바로 6대 Microsoft 기초 과정입니다. 3주간 각자 공부하고 해커그라운드 해커톤에 참여해서 직접 서비스를 만들어 보는 해커그라운드 클라우드 스킬 챌린지 이벤트! 도전해 보세요. 푸짐한 상품이 기다립니다!
+**해커그라운드 클라우드 스킬 챌린지(온라인 사전교육)**는 주어진 기간 안에 관련 지식을 직접 배워서 해커톤에 적용하는 이벤트입니다. 이번 챌린지의 주제는 바로 6대 Microsoft 기초 과정입니다. 3주간 각자 공부하고 해커그라운드 해커톤에 참여해서 직접 서비스를 만들어 보는 해커그라운드 클라우드 스킬 챌린지 이벤트! 도전해 보세요. 푸짐한 상품이 기다립니다!
 
 ## ✉️ 해커그라운드 해커톤/클라우드 스킬 챌린지 안내 메일 신청
 
 아래 폼으로 신청시 관련 안내 메일을 보내드릴 예정입니다.
 
-- [클라우드 스킬 챌린지 지금 신청하기](https://aka.ms/hackers-ground/register/csc)
+- [클라우드 스킬 챌린지(온라인 사전교육) 지금 신청하기](https://aka.ms/hackers-ground/register/csc)
 - [해커톤 지금 신청하기](https://aka.ms/hackers-ground/register/hackathon)
 
 ## 🏅 해커그라운드 클라우드 스킬 챌린지 수상자
@@ -155,21 +155,24 @@
 
 이 행사는 Microsoft 및 경북대학교에서 주최합니다.
 
-<div style="text-align: left;">
+<div style="display: flex; justify-content: center; align-items: center;">
   <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-microsoft.png" alt="Microsoft 로고" width="251" height="113"/></a>
-  <img src="assets/Logo.png" alt="경북대학교 로고" width="251", height="70"/>
+  <a href="https://www.knu.ac.kr" target="_blank" title="Microsoft 홈페이지"><img src="assets/logo-knu.png" alt="경북대학교 로고" width="180"/></a>
 </div>
 
 ## 🥑 주관
 
-이 행사는 교육부, 한국연구재단, 대구광역시, 대구경북지역혁신플랫폼 전자정보기기사업단, (주)해달프로그래밍, 대구경북대학학생회 연합에서 주관합니다.
+이 행사는 교육부, 대구광역시, 한국연구재단, 대구경북지역혁신플랫폼 전자정보기기사업단, (주)해달프로그래밍, 대구경북대학학생회연합에서 주관합니다.
+&nbsp;
 
-<div style="align: center;">
-  <img src="assets/1.png" alt="교육부 로고" width="15%"/>
-  <img src="assets/2.png" alt="대구광역시 로고" width="15%"/>
-  <img src="assets/3.jpg" alt="연구재단 로고" width="15%"/>
-  <img src="assets/4.jpg" alt="플랫폼 로고" width="10%"/>
-  <img src="assets/5.jpg" alt="사업단 로고" width="10%"/>
+<div style="display: flex; justify-content: center; align-items: center;">
+  <br/>
+
+  <img src="assets/logo-moe.png" alt="교육부 로고" width="15%"/>&nbsp;
+  <img src="assets/logo-daegu.png" alt="대구광역시 로고" width="15%"/>&nbsp;
+  <img src="assets/logo-nrf.jpg" alt="한국연구재단 로고" width="15%"/>&nbsp;
+  <img src="assets/logo-dgplatform.jpg" alt="대구경북지역혁신플랫폼 로고" width="10%"/>&nbsp;
+  <img src="assets/logo-dgei.jpg" alt="대구경북지역혁신플랫폼 전자기기사업단 로고" width="10%"/>
 </div>
 
 
