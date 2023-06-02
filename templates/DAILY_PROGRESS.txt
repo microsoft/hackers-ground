@@ -16,18 +16,24 @@ Microsoft 애저 클라우드를 활용해 지역사회에 당면한 현안 문�
 <p>🏆 각 챌린지별 현재까지 완주자들을 소개합니다!!</p>
 </blockquote>
 <ol>
-<li><strong>Hackers Ground: 애저 기초 (AZ-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/az-900">챌린지 바로가기</a>
-{{ AZ-900 완주자 리스트 + 계정별 링크 }}</li>
-<li><strong>Hackers Ground: 애저 AI 기초 (AI-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/ai-900">챌린지 바로가기</a>
-{{ AI-900 완주자 리스트 + 계정별 링크 }}</li>
-<li><strong>Hackers Ground: 애저 데이터 기초 (DP-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/dp-900">챌린지 바로가기</a><br />
-{{ DP-900 완주자 리스트 + 계정별 링크 }}</li>
-<li><strong>Hackers Ground: 파워 플랫폼 기초 (PL-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/pl-900">챌린지 바로가기</a><br />
-{{ PL-900 완주자 리스트 + 계정별 링크 }}</li>
-<li><strong>Hackers Ground: 보안 기초 (SC-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/sc-900">챌린지 바로가기</a>
-{{ SC-900 완주자 리스트 + 계정별 링크 }}</li>
-<li><strong>Hackers Ground: Microsoft 365 기초 (MS-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/ms-900">챌린지 바로가기</a><br />
-{{ MS-900 완주자 리스트 + 계정별 링크 }}</li>
+<li><p><strong>Hackers Ground: 애저 기초 (AZ-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/az-900">챌린지 바로가기</a></p>
+<p>{{ AZ-900 완주자 리스트 + 계정별 링크 }}</p>
+</li>
+<li><p><strong>Hackers Ground: 애저 AI 기초 (AI-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/ai-900">챌린지 바로가기</a></p>
+<p>{{ AI-900 완주자 리스트 + 계정별 링크 }}</p>
+</li>
+<li><p><strong>Hackers Ground: 애저 데이터 기초 (DP-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/dp-900">챌린지 바로가기</a></p>
+<p>{{ DP-900 완주자 리스트 + 계정별 링크 }}</p>
+</li>
+<li><p><strong>Hackers Ground: 파워 플랫폼 기초 (PL-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/pl-900">챌린지 바로가기</a></p>
+<p>{{ PL-900 완주자 리스트 + 계정별 링크 }}</p>
+</li>
+<li><p><strong>Hackers Ground: 보안 기초 (SC-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/sc-900">챌린지 바로가기</a></p>
+<p>{{ SC-900 완주자 리스트 + 계정별 링크 }}</p>
+</li>
+<li><p><strong>Hackers Ground: Microsoft 365 기초 (MS-900) 챌린지</strong> 👉 <a href="https://aka.ms/hg/csc/ms-900">챌린지 바로가기</a></p>
+<p>{{ MS-900 완주자 리스트 + 계정별 링크 }}</p>
+</li>
 </ol>
 <h2 id="section-5">챌린지 소개</h2>
 <p>챌린지 별로 6~12시간 정도 교육이 진행됩니다. 2개 이상 들으시는 분들의 경우엔 Microsoft 자격증 시험을 보실 수 있습니다. 자격증을 받으시는 경우 링크드인 <strong>자격증/수료증 섹션</strong>에 정보를 추가할 수 있다는 사실, 알고계셨나요?? (당신은 지금 마이크로소프트 자격증이 갖고싶다,, 갖고싶다,, 😵‍💫)</p>
