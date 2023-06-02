@@ -55,12 +55,12 @@ Microsoft와 함께 공부하는 모습을 아래 표시된 해시태그와 함�
 `#해커그라운드` `#클라우드스킬챌린지` `#hackersground` `#cloudskillchallenge`
 
 ## 클라우드 스킬 챌린지 6가지 토픽
-1. *Hackers Ground: 애저 기초 (AZ-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/az-900)
-1. *Hackers Ground: 애저 AI 기초 (AI-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/ai-900)
-1. *Hackers Ground: 애저 데이터 기초 (DP-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/dp-900)
-1. *Hackers Ground: 파워 플랫폼 기초 (PL-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/pl-900)
-1. *Hackers Ground: 보안 기초 (SC-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/sc-900)
-1. *Hackers Ground: Microsoft 365 기초 (MS-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/ms-900)
+1. **Hackers Ground: 애저 기초 (AZ-900) 챌린지** 👉 [챌린지 바로가기](https://aka.ms/hg/csc/az-900)
+1. **Hackers Ground: 애저 AI 기초 (AI-900) 챌린지** 👉 [챌린지 바로가기](https://aka.ms/hg/csc/ai-900)
+1. **Hackers Ground: 애저 데이터 기초 (DP-900) 챌린지** 👉 [챌린지 바로가기](https://aka.ms/hg/csc/dp-900)
+1. **Hackers Ground: 파워 플랫폼 기초 (PL-900) 챌린지** 👉 [챌린지 바로가기](https://aka.ms/hg/csc/pl-900)
+1. **Hackers Ground: 보안 기초 (SC-900) 챌린지** 👉 [챌린지 바로가기](https://aka.ms/hg/csc/sc-900)
+1. **Hackers Ground: Microsoft 365 기초 (MS-900) 챌린지** 👉 [챌린지 바로가기](https://aka.ms/hg/csc/ms-900)
 
 ## Microsoft Build 2023, 들어보셨나요?
 Microsoft Build행사는 마이크로소프트 개발자들의 최대 축제로, 전 세계 개발자들이 모여 **새로운 기술과 도구에 대해 알아보고, 아이디어를 공유하며 협업하는 행사**입니다. 지난 행사에서 소개되었던 주요 Topic들을 간략하게 소개드려요:)
