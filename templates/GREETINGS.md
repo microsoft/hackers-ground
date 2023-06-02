@@ -1,5 +1,7 @@
 # 해커그라운드: 클라우드 스킬 챌린지 안내
-반갑습니다! 해커그라운드 조직위원회입니다  
+
+반갑습니다! 해커그라운드 조직위원회입니다.  
+
 [해커그라운드](https://aka.ms/hackers-ground)는 대구/경북 지역의 청년개발자들과 함께 Microsoft 애저 클라우드를 활용해 당면한 현안 문제를 해결하는 해커톤입니다.
 
 여러분들께서 신청하신 클라우드 스킬 챌린지는 주어진 기간 안에 관련 지식을 직접 배워 해커톤에 적용하는 이벤트입니다.  
@@ -34,6 +36,7 @@
 ## 챌린지 완주 상품
 
 🖥6가지 토픽을 모두 완료하시면 추첨을 통해 상품으로 Microsoft Surface Pro를 제공합니다  
+
 ![Microsoft Surface Pro 9](https://github.com/microsoft/hackers-ground/blob/main/assets/microsoft-surface-pro-9.jpg?raw=true)
 
 ## SNS 공유 이벤트
