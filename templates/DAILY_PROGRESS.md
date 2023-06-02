@@ -54,7 +54,7 @@ Microsoft에서 제공하는 챌린지 이벤트에 참여하고, Microsoft 자�
 
 친구들과 함께 클라우드 스킬 챌린지를 진행할 수 있습니다. Microsoft와 함께 공부하는 모습을 아래 표시된 해시태그와 함께 인스타 또는 페이스북에 게시글을 업로드해주세요! 추첨을 통해 스타벅스 기프티콘을 보내드립니다 :)  
 
-[#해커그라운드](https://www.instagram.com/explore/tags/해커그라운드/) [#클라우드스킬챌린지](https://www.instagram.com/explore/tags/해커그라운드/)[#hackersground](https://www.instagram.com/explore/tags/hackerground) [#cloudskillschallenge](https://www.instagram.com/explore/tags/cloudskillschallenge)
+[#해커그라운드](https://www.instagram.com/explore/tags/해커그라운드/) [#클라우드스킬챌린지](https://www.instagram.com/explore/tags/해커그라운드/) [#hackersground](https://www.instagram.com/explore/tags/hackerground) [#cloudskillschallenge](https://www.instagram.com/explore/tags/cloudskillschallenge)
 
 ## 클라우드 스킬 챌린지 6가지 토픽
 

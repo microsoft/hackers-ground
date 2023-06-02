@@ -33,11 +33,11 @@
 
 1. 오른쪽 상단의 경험치 박스가 초록색으로 바뀌어야 정상적으로 인식된 상황입니다.
 
-   ![green_experience_box](https://github.com/kei01138/hackers-ground/blob/mailing/assets/green_experience_box.png?raw=true)
+   ![green_experience_box](https://github.com/microsoft/hackers-ground/blob/main/assets/green_experience_box.png?raw=true)
 
 2. 경험치 박스가 변경되면 문서 하단에 하늘색 계속 버튼이 활성화 됩니다.
 
-   ![next_sky_button](https://github.com/kei01138/hackers-ground/blob/mailing/assets/next_sky_button.png?raw=true)
+   ![next_sky_button](https://github.com/microsoft/hackers-ground/blob/main/assets/next_sky_button.png?raw=true)
 
 
 ## 챌린지 완료인증 
