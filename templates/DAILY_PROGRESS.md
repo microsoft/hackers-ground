@@ -36,25 +36,23 @@ Microsoft 자격증도 취득할 수 있는 좋은 기회이니, 마감되기 �
 1. *Hackers Ground: Microsoft 365 기초 (MS-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/ms-900)  
 {{ MS-900 TOP 1 }}님, {{ MS-900 TOP 2 }}님, {{ MS-900 TOP 3 }}님, {{ MS-900 TOP 4 }}님, {{ MS-900 TOP 5 }}님
 
-### 챌린지 소개  
+## 챌린지 소개  
 챌린지 별로 6~12시간 정도 교육이 진행됩니다.  
-2개 이상 들으시는 분들의 경우엔 Microsoft 자격증 시험을 보실 수 있습니다.  
-자격증을 받으시는 경우 링크드인 **자격증/수료증 섹션**에 정보를 추가할 수 있다는 사실, 알고계셨나요??  
-(당신은 지금 마이크로소프트 자격증이 갖고싶다,, 갖고싶다,, 😵‍💫)
+2개 이상 들으시는 분들의 경우엔 Microsoft 자격증 시험을 보실 수 있습니다. 자격증을 받으시는 경우 링크드인 **자격증/수료증 섹션**에 정보를 추가할 수 있다는 사실, 알고계셨나요?? (당신은 지금 마이크로소프트 자격증이 갖고싶다,, 갖고싶다,, 😵‍💫)
 
-### 챌린지 이벤트 상품
+## 챌린지 이벤트 상품
 ￼
 🖥 6가지 챌린지를 모두 완료하시면 추첨을 통해
 상품으로 Microsoft Surface Pro를 제공합니다.
 ![Microsoft Surface Pro 9](https://github.com/microsoft/hackers-ground/blob/main/assets/microsoft-surface-pro-9.jpg?raw=true)
 
-### 친구와 함께하는 챌린지 이벤트!
+## 친구와 함께하는 챌린지 이벤트!
 ￼
 친구들과 함께 클라우드 스킬 챌린지를 진행할 수 있습니다.  
 Microsoft와 함께 공부하는 모습을 아래 표시된 해시태그와 함께 인스타 또는 페이스북에 게시글을 업로드해주세요!  
 추첨을 통해 스타벅스 기프티콘을 보내드립니다 :)  
 
-#해커그라운드 #클라우드스킬챌린지 #hackersground #cloudskillchallenge
+`#해커그라운드` `#클라우드스킬챌린지` `#hackersground` `#cloudskillchallenge`
 
 ## 클라우드 스킬 챌린지 6가지 토픽
 1. *Hackers Ground: 애저 기초 (AZ-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/az-900)
@@ -64,12 +62,12 @@ Microsoft와 함께 공부하는 모습을 아래 표시된 해시태그와 함�
 1. *Hackers Ground: 보안 기초 (SC-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/sc-900)
 1. *Hackers Ground: Microsoft 365 기초 (MS-900) 챌린지*- 👉 [챌린지 바로가기](https://aka.ms/hg/csc/ms-900)
 
-### Microsoft Build 2023, 들어보셨나요?
+## Microsoft Build 2023, 들어보셨나요?
 Microsoft Build행사는 마이크로소프트 개발자들의 최대 축제로, 전 세계 개발자들이 모여 **새로운 기술과 도구에 대해 알아보고, 아이디어를 공유하며 협업하는 행사**입니다. 지난 행사에서 소개되었던 주요 Topic들을 간략하게 소개드려요:)
 
 {{ MS Build 한국어 요약 }}
 
-### 주변 홍보 위한 링크
+## 주변 홍보 위한 링크
 해커그라운드 링크 모음집: https://aka.ms/hackers-ground/register  
 디스코드 참여하기: https://aka.ms/hg/discord 
 친구에게 클라우드 스킬 챌린지 추천하기: https://aka.ms/hackers-ground/register/csc  
