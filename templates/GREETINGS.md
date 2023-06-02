@@ -10,7 +10,7 @@
 
 ## 클라우드 스킬 챌린지 진행기간
 
-클라우드 스킬 챌린지는 메일이 발송된 날짜부터 시작됩니다! 5월 29일부터 6월 18일 자정, 19일 0시까지 3주 동안 진행됩니다.  
+클라우드 스킬 챌린지는 메일이 발송된 날짜부터 시작됩니다! 5월 29일 0시부터 6월 18일 밤 12시까지 3주 동안 진행됩니다.  
 
 ## 클라우드 스킬 챌린지 토픽별 완주 인증
 
@@ -35,7 +35,7 @@
 
 ## 챌린지 완주 상품
 
-🖥6가지 토픽을 모두 완료하시면 추첨을 통해 상품으로 Microsoft Surface Pro를 제공합니다  
+🖥6가지 토픽을 모두 완료하시면 추첨을 통해 상품으로 Microsoft Surface Pro를 제공합니다.  
 
 ![Microsoft Surface Pro 9](https://github.com/microsoft/hackers-ground/blob/main/assets/microsoft-surface-pro-9.jpg?raw=true)
 
@@ -43,18 +43,19 @@
 
 📱친구들과 함께 클라우드 스킬 챌린지를 진행할 수 있습니다. Microsoft와 함께 공부하는 모습을 인스타/페이스북에 게시글을 작성하시면 아래 해시태그로 달아주세요! 추첨을 통해 스타벅스 기프티콘을 보내드립니다 :)   
 
-`#해커그라운드` `#클라우드스킬챌린지` `#hackersground` `#cloudskillchallenge` 
+[#해커그라운드](https://www.instagram.com/explore/tags/해커그라운드/) [#클라우드스킬챌린지](https://www.instagram.com/explore/tags/해커그라운드/)[#hackersground](https://www.instagram.com/explore/tags/hackerground) [#cloudskillschallenge](https://www.instagram.com/explore/tags/cloudskillschallenge)
 
 ### 친구들에게 클라우드 스킬 챌린지 추천하기
 
 친구들이 클라우드 스킬 챌린지에 참여하고 싶어 하면 하단의 링크를 전달해 주세요!   
+
 * [친구에게 클라우드 스킬 챌린지 추천하기](https://aka.ms/hackers-ground/register/csc)  
 
-3주간 재밌게 진행해 봐요! 잘 부탁드립니다   
+3주간 재밌게 진행해 봐요! 잘 부탁드립니다.   
+
 궁금한게 생기시면 디스코드로 질문해주세요!  
 
-## 관련 링크 모음
+## 기존 참여자들과 소통하기
 
-* 디스코드 참여하기: https://aka.ms/hg/discord 
-* 친구에게 클라우드 스킬 챌린지 추천하기: https://aka.ms/hackers-ground/register/csc  
+* 디스코드 소통채널 참여하기: https://aka.ms/hg/discord 
 * 해커그라운드 공식홈페이지: https://aka.ms/hackers-ground
