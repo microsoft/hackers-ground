@@ -1,0 +1,167 @@
+name: On Challenge Submitted
+
+on:
+  issues:
+    types:
+    - opened
+
+permissions:
+  contents: read
+  id-token: write
+  issues: write
+
+jobs:
+  labelling:
+    name: 'Add a label on submission: review-required'
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check issue date/time
+      id: checkpoint
+      shell: pwsh
+      run: |
+        $tz = [TimeZoneInfo]::FindSystemTimeZoneById("Asia/Seoul")
+        $dateSubmitted = [DateTimeOffset]::Parse("${{ github.event.issue.created_at }}")
+        $offset = $tz.GetUtcOffset($dateSubmitted)
+
+        $dateSubmitted = $dateSubmitted.ToOffset($offset)
+        $dateDue = $([DateTimeOffset]::Parse("${{ vars.CSC_DUE_DATE }}"))
+        $isOverdue = "$($dateSubmitted -gt $dateDue)".ToLowerInvariant()
+
+        $dateSubmittedValue = $dateSubmitted.ToString("yyyy-MM-ddTHH:mm:ss.fffzzz")
+        $dateDueValue = $dateDue.ToString("yyyy-MM-ddTHH:mm:ss.fffzzz")
+
+        echo "dateSubmitted=$dateSubmittedValue" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+        echo "dateDue=$dateDueValue" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+        echo "isOverdue=$isOverdue" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+
+    - name: Check challenge code
+      id: challenge
+      shell: pwsh
+      run: |
+        $title = "${{ github.event.issue.title }}"
+        $code = $title.Contains("]") ? $title.Substring(0, $title.IndexOf(']')).Replace("[", "").Replace("]", "").Trim().ToLowerInvariant() : ""
+        $codeUpper = ($code -ne "") ? $code.ToUpperInvariant() : ""
+        $codes = @("az-900", "ai-900", "dp-900", "pl-900", "sc-900", "ms-900")
+        $isValidCode = ($code -ne "") ? $($codes.Contains($code)).ToString().ToLowerInvariant() : $false
+
+        echo "code=$code" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+        echo "codeUpper=$codeUpper" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+        echo "isValidCode=$isValidCode" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+
+    - name: Add a label - Overdue
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'true' }}
+      shell: bash
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue edit ${{ github.event.issue.number }} \
+          --add-label "overdue" \
+          -R ${{ github.event.repository.full_name }}
+
+    - name: Comment to issue - Overdue
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'true' }}
+      uses: bubkoo/auto-comment@v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        issuesOpened: |
+          👋🏼 @{{ author }} 님!
+
+          * 이슈 제출 시각: ${{ steps.checkpoint.outputs.dateSubmitted }}
+          * 이슈 마감 시각: ${{ steps.checkpoint.outputs.dateDue }}
+
+          안타깝게도 제출하신 이슈는 마감 기한인 ${{ steps.checkpoint.outputs.dateDue }}을 넘기셨습니다. 😭 따라서, 이번 클라우드 스킬 챌린지 이벤트에 반영되지 않습니다.
+
+          그동안 클라우드 스킬 챌린지 이벤트에 참여해 주셔서 감사 드립니다. 하지만 우리는 해커톤이 있잖아요? 거기서 다시 만나요!
+
+    - name: Close issue - Overdue
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'true' }}
+      shell: bash
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue close ${{ github.event.issue.number }} \
+          -c "챌린지 제출 기한이 종료되었습니다. 이슈를 닫습니다." \
+          -R ${{ github.event.repository.full_name }}
+
+    - name: Add a label - Invalid challenge code
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'false' }}
+      shell: bash
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue edit ${{ github.event.issue.number }} \
+          --add-label "invalid" \
+          -R ${{ github.event.repository.full_name }}
+  
+    - name: Comment to issue - Invalid challenge code
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'false' }}
+      uses: bubkoo/auto-comment@v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        issuesOpened: |
+          👋🏼 @{{ author }} 님!
+
+          * 제출 챌린지 코드: `${{ steps.challenge.outputs.codeUpper }}`
+          * 예상 챌린지 코드: `AZ-900`, `AI-900`, `DP-900`, `PL-900`, `SC-900`, `MS-900`
+
+          안타깝게도 제출하신 이슈는 정확한 챌린지 코드가 제목에 포함되어 있지 않아 확인을 할 수가 없습니다. 😱 챌린지 코드는 위에 언급한 여섯 가지 중 하나여야 합니다.
+
+          이 이슈는 자동으로 닫힐 예정이니, 새롭게 이슈를 생성해 주시기 바랍니다.
+  
+    - name: Close issue - Invalid challenge code
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'false' }}
+      shell: bash
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue close ${{ github.event.issue.number }} \
+          -c "챌린지 코드를 확인할 수 없습니다. 이슈를 닫습니다." \
+          -R ${{ github.event.repository.full_name }}
+  
+    - name: Add a label - Acknowledge
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'true' }}
+      shell: bash
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue edit ${{ github.event.issue.number }} \
+          --add-label "csc,${{ steps.challenge.outputs.code }},verifying" \
+          -R ${{ github.event.repository.full_name }}
+
+    - name: Get random assignee
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'true' }}
+      id: assignee
+      shell: pwsh
+      run: |
+        $scriptUrl = "https://raw.githubusercontent.com/hackersground-kr/operations/main/get-randomassignee/Get-RandomAssignee.ps1"
+        Invoke-RestMethod $scriptUrl | Out-File ~/Get-RandomAssignee.ps1
+        $assignee = $(~/Get-RandomAssignee.ps1 -Assignees "${{ secrets.INSPECTORS }}")
+
+        echo "value=$assignee" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+
+    - name: Assign a staff
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'true' }}
+      shell: bash
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue edit ${{ github.event.issue.number }} \
+          --add-assignee "${{ steps.assignee.outputs.value }}" \
+          -R ${{ github.event.repository.full_name }}
+
+    - name: Comment to issue - Acknowledge
+      if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'true' }}
+      uses: bubkoo/auto-comment@v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        issuesOpenedReactions: 'rocket, +1'
+        issuesOpened: |
+          👋🏼 @{{ author }} 님!
+
+          ${{ steps.challenge.outputs.codeUpper }} 챌린지 완료 이슈를 생성해 주셔서 감사합니다! 🎉 참가자님의 해커톤 완주를 응원해요! 💪🏼
+
+          @${{ steps.assignee.outputs.value }} 님께서 최대한 빠르게 확인해 드리겠습니다! 😊
+
+          🔹 해커그라운드 운영진 일동 🔹
