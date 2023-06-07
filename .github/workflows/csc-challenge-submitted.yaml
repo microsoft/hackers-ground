@@ -4,25 +4,57 @@ on:
   issues:
     types:
     - opened
+  workflow_dispatch:
+    inputs:
+      issue-number:
+        description: 'Issue number'
+        required: true
 
 permissions:
   contents: read
   id-token: write
   issues: write
+  pull-requests: write
 
 jobs:
-  labelling:
-    name: 'Add a label on submission: review-required'
+  verification-start:
+    name: 'Starting verification'
 
     runs-on: ubuntu-latest
 
     steps:
+    # - name: Check event payload
+    #   shell: pwsh
+    #   run: |
+    #     $eventPayload = ${{ toJson(github) }}
+
+    - name: Check issue details
+      id: issue
+      shell: pwsh
+      env:
+        GH_TOKEN: ${{ secrets.GH_PAT }}
+      run: |
+        if ("${{ github.event_name}}" -eq "workflow_dispatch") {
+          echo "number=${{ github.event.inputs.issue-number }}" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8
+
+          $issue = $(gh api /repos/microsoft/hackers-ground/issues/${{ github.event.inputs.issue-number }} | ConvertFrom-Json)
+          echo "title=$($issue.title)" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+          echo "created_at=$($issue.created_at.ToString("yyyy-MM-ddTHH:mm:ss.fffzzz"))" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+          echo "githubId=$($issue.user.login)" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+        } else {
+          echo "number=${{ github.event.issue.number }}" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8
+
+          echo "title=$('${{ github.event.issue.title }}')" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+          echo "created_at=$('${{ github.event.issue.created_at }}')" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+          echo "githubId=$('${{ github.event.issue.user.login }}')" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+        }
+
     - name: Check issue date/time
       id: checkpoint
       shell: pwsh
       run: |
         $tz = [TimeZoneInfo]::FindSystemTimeZoneById("Asia/Seoul")
-        $dateSubmitted = [DateTimeOffset]::Parse("${{ github.event.issue.created_at }}")
+        $dateSubmitted = [DateTimeOffset]::Parse("${{ steps.issue.outputs.created_at }}")
         $offset = $tz.GetUtcOffset($dateSubmitted)
 
         $dateSubmitted = $dateSubmitted.ToOffset($offset)
@@ -40,7 +72,7 @@ jobs:
       id: challenge
       shell: pwsh
       run: |
-        $title = "${{ github.event.issue.title }}"
+        $title = "${{ steps.issue.outputs.title }}"
         $code = $title.Contains("]") ? $title.Substring(0, $title.IndexOf(']')).Replace("[", "").Replace("]", "").Trim().ToLowerInvariant() : ""
         $codeUpper = ($code -ne "") ? $code.ToUpperInvariant() : ""
         $codes = @("az-900", "ai-900", "dp-900", "pl-900", "sc-900", "ms-900")
@@ -56,17 +88,19 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh issue edit ${{ github.event.issue.number }} \
+        gh issue edit ${{ steps.issue.outputs.number }} \
           --add-label "overdue" \
           -R ${{ github.event.repository.full_name }}
 
     - name: Comment to issue - Overdue
       if: ${{ steps.checkpoint.outputs.isOverdue == 'true' }}
-      uses: bubkoo/auto-comment@v1
+      uses: actions-cool/issues-helper@v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        issuesOpened: |
-          👋🏼 @{{ author }} 님!
+        actions: 'create-comment'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        issue-number: ${{ steps.issue.outputs.number }}
+        body: |
+          👋🏼 @${{ steps.issue.outputs.githubId }} 님!
 
           * 이슈 제출 시각: ${{ steps.checkpoint.outputs.dateSubmitted }}
           * 이슈 마감 시각: ${{ steps.checkpoint.outputs.dateDue }}
@@ -81,7 +115,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh issue close ${{ github.event.issue.number }} \
+        gh issue close ${{ steps.issue.outputs.number }} \
           -c "챌린지 제출 기한이 종료되었습니다. 이슈를 닫습니다." \
           -R ${{ github.event.repository.full_name }}
 
@@ -91,17 +125,19 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh issue edit ${{ github.event.issue.number }} \
+        gh issue edit ${{ steps.issue.outputs.number }} \
           --add-label "invalid" \
           -R ${{ github.event.repository.full_name }}
   
     - name: Comment to issue - Invalid challenge code
       if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'false' }}
-      uses: bubkoo/auto-comment@v1
+      uses: actions-cool/issues-helper@v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        issuesOpened: |
-          👋🏼 @{{ author }} 님!
+        actions: 'create-comment'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        issue-number: ${{ steps.issue.outputs.number }}
+        body: |
+          👋🏼 @${{ steps.issue.outputs.githubId }} 님!
 
           * 제출 챌린지 코드: `${{ steps.challenge.outputs.codeUpper }}`
           * 예상 챌린지 코드: `AZ-900`, `AI-900`, `DP-900`, `PL-900`, `SC-900`, `MS-900`
@@ -116,7 +152,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh issue close ${{ github.event.issue.number }} \
+        gh issue close ${{ steps.issue.outputs.number }} \
           -c "챌린지 코드를 확인할 수 없습니다. 이슈를 닫습니다." \
           -R ${{ github.event.repository.full_name }}
   
@@ -126,7 +162,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh issue edit ${{ github.event.issue.number }} \
+        gh issue edit ${{ steps.issue.outputs.number }} \
           --add-label "csc,${{ steps.challenge.outputs.code }},verifying" \
           -R ${{ github.event.repository.full_name }}
 
@@ -139,29 +175,46 @@ jobs:
         Invoke-RestMethod $scriptUrl | Out-File ~/Get-RandomAssignee.ps1
         $assignee = $(~/Get-RandomAssignee.ps1 -Assignees "${{ secrets.INSPECTORS }}")
 
-        echo "value=$assignee" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+        echo "githubId=$assignee" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
+
+    # - name: Assign a staff
+    #   if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'true' }}
+    #   shell: bash
+    #   env:
+    #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   run: |
+    #     gh issue edit ${{ steps.issue.outputs.number }} --add-assignee ${{ steps.assignee.outputs.githubId }} -R ${{ github.event.repository.full_name }}
 
     - name: Assign a staff
       if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'true' }}
-      shell: bash
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        gh issue edit ${{ github.event.issue.number }} \
-          --add-assignee "${{ steps.assignee.outputs.value }}" \
-          -R ${{ github.event.repository.full_name }}
+      uses: actions-cool/issues-helper@v3
+      with:
+        actions: 'add-assignees'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        issue-number: ${{ steps.issue.outputs.number }}
+        assignees: ${{ steps.assignee.outputs.githubId }}
 
     - name: Comment to issue - Acknowledge
       if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'true' }}
-      uses: bubkoo/auto-comment@v1
+      uses: actions-cool/issues-helper@v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        issuesOpenedReactions: 'rocket, +1'
-        issuesOpened: |
-          👋🏼 @{{ author }} 님!
+        actions: 'create-comment'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        issue-number: ${{ steps.issue.outputs.number }}
+        emoji: '+1,rocket'
+        body: |
+          👋🏼 @${{ steps.issue.outputs.githubId }} 님!
 
           ${{ steps.challenge.outputs.codeUpper }} 챌린지 완료 이슈를 생성해 주셔서 감사합니다! 🎉 참가자님의 해커톤 완주를 응원해요! 💪🏼
 
-          @${{ steps.assignee.outputs.value }} 님께서 최대한 빠르게 확인해 드리겠습니다! 😊
+          @${{ steps.assignee.outputs.githubId }} 님께서 최대한 빠르게 확인해 드리겠습니다! 😊
 
           🔹 해커그라운드 운영진 일동 🔹
+
+    # - name: Call Power Automate workflow
+    #   if: ${{ steps.checkpoint.outputs.isOverdue == 'false' && steps.challenge.outputs.isValidCode == 'true' }}
+    #   uses: fjogeleit/http-request-action@v1
+    #   with:
+    #     url: ${{ secrets.PAU_ON_CHALLENGE_SUBMITTED_URL }}
+    #     method: 'POST'
+    #     data: '{ "githubId": "${{ steps.issue.outputs.githubId }}" }'

@@ -1,19 +1,19 @@
 name: On Challenge Verified
 on:
   issue_comment:
-    types: [created]
-    
+    types:
+    - created
+
 permissions:
   contents: read
   id-token: write
   issues: write
-  
-jobs:
 
+jobs:
   verification-completion:
     name: Completing verification
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Check challenge code
       id: challenge
@@ -24,55 +24,62 @@ jobs:
         $codeUpper = ($code -ne "") ? $code.ToUpperInvariant() : ""
         $codes = @("az-900", "ai-900", "dp-900", "pl-900", "sc-900", "ms-900")
         $isValidCode = ($code -ne "") ? $($codes.Contains($code)).ToString().ToLowerInvariant() : $false
-        
+
         echo "code=$code" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
         echo "codeUpper=$codeUpper" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
         echo "isValidCode=$isValidCode" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
-        
-    - name: Call power automate
-      if: ${{ github.event.comment.user.login == github.event.issue.assignee.login && steps.challenge.outputs.isValidCode == 'true' && contains(github.event.comment.body, '/ok') }}
-      uses: fjogeleit/http-request-action@v1
-      with:
-        url: ${{ secrets.HTTP_REQUEST_URL }}
-        method: 'POST'
-        
-    - name: removelabel
+
+    # - name: Call Power Automate workflow
+    #   if: |
+    #     github.event.comment.user.login == github.event.issue.assignee.login &&
+    #     steps.challenge.outputs.isValidCode == 'true' &&
+    #     contains(github.event.comment.body, '/ok')
+    #   uses: fjogeleit/http-request-action@v1
+    #   with:
+    #     url: ${{ secrets.PAU_ON_CHALLENGE_VERIFIED_URL }}
+    #     method: 'POST'
+    #     data: '{ "githubId": "${{ github.event.issue.user.login }}", "challengeCode": "${{ steps.challenge.outputs.codeUpper }}" }'
+
+    - name: Remove label
       if: |
-        github.event.comment.user.login == github.event.issue.assignee.login&&
-          contains(github.event.comment.body, '/ok')
+        github.event.comment.user.login == github.event.issue.assignee.login &&
+        contains(github.event.comment.body, '/ok')
       uses: buildsville/add-remove-label@v2.0.0
       with:
-        token: ${{secrets.GITHUB_TOKEN}}
+        token: ${{ secrets.GITHUB_TOKEN }}
         labels: verifying
         type: remove
-        
-    - name: addlabel
+
+    - name: Aadd label
       if: |
-        github.event.comment.user.login == github.event.issue.assignee.login&&
-          contains(github.event.comment.body, '/ok')
+        github.event.comment.user.login == github.event.issue.assignee.login &&
+        contains(github.event.comment.body, '/ok')
       uses: buildsville/add-remove-label@v2.0.0
       with:
-        token: ${{secrets.GITHUB_TOKEN}}
+        token: ${{ secrets.GITHUB_TOKEN }}
         labels: verifyied
         type: add
-        
-    - name: Discord Message
-      if: ${{ github.event.comment.user.login == github.event.issue.assignee.login && steps.challenge.outputs.isValidCode == 'true' && contains(github.event.comment.body, '/ok') }}
+
+    - name: Post message to Discord
+      if: |
+        github.event.comment.user.login == github.event.issue.assignee.login &&
+        steps.challenge.outputs.isValidCode == 'true' &&
+        contains(github.event.comment.body, '/ok')
+      uses: Ilshidur/action-discord@master
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
-      uses: Ilshidur/action-discord@master
       with:
-        args: '${{ github.event.issue.user.login }}님이 ${{ steps.challenge.outputs.codeUpper }}과정을 달성하셨습니다.'
-                 
-    - name: comment and close Issue
+        args: 'GitHub ID ${{ github.event.issue.user.login }}님께서 ${{ steps.challenge.outputs.codeUpper }} 과정을 달성하셨습니다.'
+
+    - name: Comment and close Issue
       if: |
-        github.event.comment.user.login == github.event.issue.assignee.login&&
-          contains(github.event.comment.body, '/ok')
+        github.event.comment.user.login == github.event.issue.assignee.login &&
+        contains(github.event.comment.body, '/ok')
       uses: peter-evans/close-issue@v3
       with:
         comment: |
-          ${{ steps.challenge.outputs.codeUpper }}과정을 끝내서 수고했다는 말씀 드리고 싶어요!
+          ${{ steps.challenge.outputs.codeUpper }} 과정을 끝내서 수고했다는 말씀 드리고 싶어요!
 
-          ${{ steps.challenge.outputs.codeUpper }}과정을 마치고 느낀 감정이나 어려웠던 점을 공유해주시면 더욱 좋겠어요.
+          ${{ steps.challenge.outputs.codeUpper }} 과정을 마치고 느낀 감정이나 어려웠던 점을 공유해주시면 더욱 좋겠어요.
 
           앞으로도 화이팅하세요! 🎉🎉🎉💪💪💪
