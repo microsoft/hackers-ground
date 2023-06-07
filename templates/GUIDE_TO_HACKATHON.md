@@ -5,9 +5,6 @@
 <div style="text-align: center;">
   <img src="https://github.com/microsoft/hackers-ground/blob/main/assets/Hackers_Ground_Hackathon_poster.jpg" alt="해커그라운드 해커톤 포스터 깃헙용" width="100%"/>
 </div>
-<div style="text-align: center;">
-  <img src="/assets/Hackers_Ground_Hackathon_poster.jpg" alt="해커그라운드 해커톤 포스터 로컬용" width="100%"/>
-</div>
 
 ## 해커그라운드 해커톤 신청하기
 
