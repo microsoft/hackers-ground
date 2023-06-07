@@ -5,9 +5,6 @@
 <div style="text-align: center;">
   <img src="https://github.com/microsoft/hackers-ground/blob/main/assets/Hackers_Ground_Hackathon_poster.jpg" alt="해커그라운드 해커톤 포스터 깃헙용" width="100%"/>
 </div>
-<div style="text-align: center;">
-  <img src="/assets/Hackers_Ground_Hackathon_poster.jpg" alt="해커그라운드 해커톤 포스터 로컬용" width="100%"/>
-</div>
 
 ## 해커그라운드 해커톤 신청하기
 
@@ -21,15 +18,12 @@
 - 장소: 대구 엑스코 그랜드볼룸 B (대구광역시 북구 엑스코로 10)
 
   ![대구 엑스코 지도 깃헙용](https://github.com/microsoft/hackers-ground/blob/main/assets/map-exco.png)
-  ![대구 엑스코 지도 로컬용](/assets/map-exco.png)
-
 
 ## 🙆🏻‍♀️ 해커그라운드 해커톤 참여 자격 및 조건
 
 - 자신이 직접 지역사회 문제 및 현안을 해결하고 싶은 대구/경북 소재 17세 ~ 39세 청년
   - 행사 기간 중 요청시 자신의 거주지를 증명할 수 있어야 합니다.
 - [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 활용하여 문제 해결
-
 
 ## 💻 해커그라운드 해커톤 사전 핸즈온랩 세션
 
@@ -44,12 +38,10 @@
   | 1교시 | 애저 클라우드 기초 | 애저 클라우드 기초 | 애저 클라우드 기초 |
   | 2교시 | GitHub 코드스페이스 및 코파일럿 기초 | GitHub 코드스페이스 및 코파일럿 기초 | GitHub 코드스페이스 및 코파일럿 기초 |
 
-
 ## 💰 해커그라운드 해커톤 참가자 베네핏
 
-- 모든 참가자는 [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 행사 기간 중 무료로 사용 가능합니다
+- 모든 참가자는 [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 행사 기간 중 무료로 사용 가능합니다.
 - 모든 참가자는 [GitHub 코파일럿](https://github.com/features/copilot)을 행사기간 중 무료로 사용 가능합니다.
-
 
 ## 🧑🏻‍🏫 해커그라운드 해커톤 기술 멘토
 
@@ -59,13 +51,11 @@
   - 행사장 내 Microsoft 엔지니어 및 Microsoft MVP 상주 멘토링
   - 별도로 팀별 멘토가 배정되지 않으며 기술적인 문제 발생 시 오피스 아워를 이용해 실시간 오프라인 멘토링 진행
 
-
 ## 🏅 해커그라운드 해커톤 시상 부문
 
 - 대상 (총 1팀): Microsoft 사장상
 - 최우수상 (총 2팀): 대구경북지역혁신플랫폼 전자정보기기사업단장상
 - 우수상 (총 3팀): Microsoft 사장상
-
 
 ## 🏆 해커그라운드 해커톤 시상품
 
@@ -107,4 +97,3 @@
 [qna]: https://github.com/microsoft/hackers-ground/issues
 [privacy]: https://github.com/microsoft/hackers-ground/blob/main/PRIVACY_POLICY.md
 [coc]: https://github.com/microsoft/hackers-ground/blob/main/CODE_OF_CONDUCT.md
-
