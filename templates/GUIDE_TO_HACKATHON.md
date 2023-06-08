@@ -3,10 +3,7 @@
 **해커그라운드** 이벤트는 대구/경북 지역의 청년 개발자들과 함께 [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 활용해 당면한 지역의 현안 문제를 해결하는 해커톤입니다.
 
 <div style="text-align: center;">
-  <img src="https://github.com/microsoft/hackers-ground/blob/main/assets/Hackers_Ground_Hackathon_poster.jpg" alt="해커그라운드 해커톤 포스터 깃헙용" width="100%"/>
-</div>
-<div style="text-align: center;">
-  <img src="/assets/Hackers_Ground_Hackathon_poster.jpg" alt="해커그라운드 해커톤 포스터 로컬용" width="100%"/>
+  <img src="https://github.com/microsoft/hackers-ground/blob/main/assets/Hackers_Ground_Hackathon_poster.jpg?raw=true" alt="해커그라운드 해커톤 포스터 깃헙용" width="100%"/>
 </div>
 
 ## 해커그라운드 해커톤 신청하기
@@ -20,8 +17,7 @@
 - 해커톤 기간: 2023년 6월 21일 - 23일
 - 장소: 대구 엑스코 그랜드볼룸 B (대구광역시 북구 엑스코로 10)
 
-  ![대구 엑스코 지도 깃헙용](https://github.com/microsoft/hackers-ground/blob/main/assets/map-exco.png)
-  ![대구 엑스코 지도 로컬용](/assets/map-exco.png)
+  ![대구 엑스코 지도 깃헙용](https://github.com/microsoft/hackers-ground/blob/main/assets/map-exco.png?raw=true)
 
 
 ## 🙆🏻‍♀️ 해커그라운드 해커톤 참여 자격 및 조건
@@ -53,11 +49,10 @@
 
 ## 🧑🏻‍🏫 해커그라운드 해커톤 기술 멘토
 
-해커그라운드 기간중 다양한 기술적 문제들에 대해 궁금한 점이 있으신가요? 여기 Microsoft의 전문가와 Microsoft MVP들이 해커톤 기간중 겪을 수 있는 여러가지 기술적인 문제 해결에 멘토링을 해 주실 예정입니다.
+해커그라운드 기간 중 다양한 기술적 문제들에 대해 궁금한 점이 있으신가요? 여기 Microsoft의 전문가와 Microsoft MVP들이 해커톤 기간중 겪을 수 있는 여러가지 기술적인 문제 해결에 멘토링을 해 주실 예정입니다.
 
-- 내용:
-  - 행사장 내 Microsoft 엔지니어 및 Microsoft MVP 상주 멘토링
-  - 별도로 팀별 멘토가 배정되지 않으며 기술적인 문제 발생 시 오피스 아워를 이용해 실시간 오프라인 멘토링 진행
+- 행사장 내 Microsoft 엔지니어 및 Microsoft MVP 상주 멘토링
+- 별도로 팀별 멘토가 배정되지 않으며 기술적인 문제 발생 시 오피스 아워를 이용해 실시간 오프라인 멘토링 진행
 
 
 ## 🏅 해커그라운드 해커톤 시상 부문
@@ -83,8 +78,8 @@
 <div style="display: flex; justify-content: center; align-items: center;">
   <br/>
 
-  <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-microsoft-cropped.png" alt="Microsoft 로고" width="251"/></a>&nbsp;
-  <a href="https://www.knu.ac.kr" target="_blank" title="Microsoft 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-knu.png" alt="경북대학교 로고" width="210"/></a>
+  <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-microsoft-cropped.png?raw=true" alt="Microsoft 로고" width="251"/></a>&nbsp;
+  <a href="https://www.knu.ac.kr" target="_blank" title="Microsoft 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-knu.png?raw=true" alt="경북대학교 로고" width="210"/></a>
 </div>
 
 ## 🥑 주관
@@ -95,11 +90,11 @@
 <div style="display: flex; justify-content: center; align-items: center;">
   <br/>
 
-  <a href="https://www.moe.go.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-moe.png" alt="교육부 로고" width="15%"/></a>&nbsp;
-  <a href="https://www.daegu.go.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-daegu.png" alt="대구광역시 로고" width="15%"/></a>&nbsp;
-  <a href="https://www.nrf.re.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-nrf.jpg" alt="한국연구재단 로고" width="15%"/></a>&nbsp;
-  <a href="https://www.dgplatform.or.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-dgplatform.jpg" alt="대구경북지역혁신플랫폼 로고" width="10%"/></a>&nbsp;
-  <a href="https://dgei.or.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-dgei.jpg" alt="대구경북지역혁신플랫폼 전자기기사업단 로고" width="10%"/></a>
+  <a href="https://www.moe.go.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-moe.png?raw=true" alt="교육부 로고" width="15%"/></a>&nbsp;
+  <a href="https://www.daegu.go.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-daegu.png?raw=true" alt="대구광역시 로고" width="15%"/></a>&nbsp;
+  <a href="https://www.nrf.re.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-nrf.jpg?raw=true" alt="한국연구재단 로고" width="15%"/></a>&nbsp;
+  <a href="https://www.dgplatform.or.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-dgplatform.jpg?raw=true" alt="대구경북지역혁신플랫폼 로고" width="10%"/></a>&nbsp;
+  <a href="https://dgei.or.kr/" target="_blank"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-dgei.jpg?raw=true" alt="대구경북지역혁신플랫폼 전자기기사업단 로고" width="10%"/></a>
 </div>
 
 
