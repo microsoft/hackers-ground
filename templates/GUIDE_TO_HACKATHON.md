@@ -3,7 +3,7 @@
 **해커그라운드** 이벤트는 대구/경북 지역의 청년 개발자들과 함께 [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 활용해 당면한 지역의 현안 문제를 해결하는 해커톤입니다.
 
 <div style="text-align: center;">
-  <img src="https://github.com/microsoft/hackers-ground/blob/main/assets/Hackers_Ground_Hackathon_poster.jpg?raw=true" alt="해커그라운드 해커톤 포스터 깃헙용" width="100%"/>
+  <img src="https://github.com/microsoft/hackers-ground/blob/main/assets/Hackers_Ground_Hackathon_poster.jpg?raw=true" alt="해커그라운드 해커톤 포스터 깃헙용" width="864"/>
 </div>
 
 ## 해커그라운드 해커톤 신청하기
@@ -73,7 +73,7 @@
   <br/>
 
   <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-microsoft-cropped.png?raw=true" alt="Microsoft 로고" width="251"/></a>&nbsp;
-  <a href="https://www.knu.ac.kr" target="_blank" title="Microsoft 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-knu.png?raw=true" alt="경북대학교 로고" width="210"/></a>
+  <a href="https://www.knu.ac.kr" target="_blank" title="경북대학교 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-knu.png?raw=true" alt="경북대학교 로고" width="210"/></a>
 </div>
 
 ## 🥑 주관
