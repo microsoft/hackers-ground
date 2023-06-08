@@ -13,4 +13,4 @@
 Microsoft와 함께하는 해커그라운드 클라우드 스킬 챌린지 많은 참여 부탁드립니다. 제출하신 메일로 상세 내용을 보내드리니 참고 부탁드립니다.
 
 - 해커그라운드 공식홈페이지: https://aka.ms/hackers-ground
-- 해커그라운드 링크 모음집: https://aka.ms/hackers-ground/register
+- 해커그라운드 링크 모음집: https://aka.ms/hackers-ground/register
