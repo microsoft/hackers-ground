@@ -29,16 +29,16 @@ jobs:
         echo "codeUpper=$codeUpper" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
         echo "isValidCode=$isValidCode" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf-8 -Append
 
-    # - name: Call Power Automate workflow
-    #   if: |
-    #     github.event.comment.user.login == github.event.issue.assignee.login &&
-    #     steps.challenge.outputs.isValidCode == 'true' &&
-    #     contains(github.event.comment.body, '/ok')
-    #   uses: fjogeleit/http-request-action@v1
-    #   with:
-    #     url: ${{ secrets.PAU_ON_CHALLENGE_VERIFIED_URL }}
-    #     method: 'POST'
-    #     data: '{ "githubId": "${{ github.event.issue.user.login }}", "challengeCode": "${{ steps.challenge.outputs.codeUpper }}" }'
+    - name: Call Power Automate workflow
+      if: |
+        github.event.comment.user.login == github.event.issue.assignee.login &&
+        steps.challenge.outputs.isValidCode == 'true' &&
+        contains(github.event.comment.body, '/ok')
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: ${{ secrets.PAU_ON_CHALLENGE_VERIFIED_URL }}
+        method: 'POST'
+        data: '{ "githubId": "${{ github.event.issue.user.login }}", "challengeCode": "${{ steps.challenge.outputs.codeUpper }}" }'
 
     - name: Remove label
       if: |
@@ -57,7 +57,7 @@ jobs:
       uses: buildsville/add-remove-label@v2.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        labels: verifyied
+        labels: verified
         type: add
 
     - name: Post message to Discord
@@ -69,7 +69,7 @@ jobs:
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
       with:
-        args: 'GitHub ID ${{ github.event.issue.user.login }}님께서 ${{ steps.challenge.outputs.codeUpper }} 과정을 달성하셨습니다.'
+        args: 'GitHub ID @${{ github.event.issue.user.login }}님께서 ${{ steps.challenge.outputs.codeUpper }} 과정을 달성하셨습니다.'
 
     - name: Comment and close Issue
       if: |
@@ -78,6 +78,8 @@ jobs:
       uses: peter-evans/close-issue@v3
       with:
         comment: |
+          축하드립니다, @${{ github.event.issue.user.login }}님!
+
           ${{ steps.challenge.outputs.codeUpper }} 과정을 끝내서 수고했다는 말씀 드리고 싶어요!
 
           ${{ steps.challenge.outputs.codeUpper }} 과정을 마치고 느낀 감정이나 어려웠던 점을 공유해주시면 더욱 좋겠어요.
