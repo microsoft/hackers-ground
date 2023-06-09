@@ -28,9 +28,9 @@
 * 팀장으로 리딩하고 싶으시다면 [디스코드 "주제" 채널](https://aka.ms/hg/discord)을 통해 주제 포스트를 올리고, 원하는 직무의 팀원을 구하시면 됩니다.
 * 팀원으로 팔로잉하고 싶으시다면 [디스코드 직무별 채널](https://aka.ms/hg/discord)을 통해 자기 소개와 직무를 작성하고 원하는 주제 포스트에 댓글을 작성하시면 됩니다.
 
-![모집 중인 팀 예시](https://github.com/microsoft/hackers-ground/assets/discord_team_recruiting_ing.jpg?raw=true)
+![모집 중인 팀 예시](https://github.com/microsoft/hackers-ground/blob/main/assets/discord_team_recruiting_end.jpg?raw=true)
 
-![모집 완료된 팀 예시](https://github.com/microsoft/hackers-ground/assets/discord_team_recruiting_end.jpg?raw=true)
+![모집 완료된 팀 예시](https://github.com/microsoft/hackers-ground/blob/main/assets/discord_team_recruiting_end.jpg?raw=true)
 
 ### 본 행사 팀빌딩 일정
 
@@ -71,14 +71,15 @@
 
 ## 🏆 해커그라운드 해커톤 시상품
 
-- 대상 (총 1팀): 상장 + 150만원 상당 상품
-- 최우수상 (총 2팀): 상장 + 70만원 상당 상품
-- 우수상 (총 3팀): 상장 + 40만원 상당 상품
+- 대상 (총 1팀):  서피스 프로 노트북
+- 최우수상 (총 2팀): Xbox 디아블로4 에디션
+- 우수상 (총 3팀): Xbox
+
 
 > 상품 관련 세부 사항은 예고 없이 달라질 수 있습니다.
 
 
 ## QnA
 
-Q. 아무것도 모르는데 해커톤 참여할 수 있을까요?  
-A. 해커톤에 참여하시는데 [클라우드 스킬 챌린지](https://aka.ms/hackers-ground/register/csc)를 진행하지 않으신 분들은 링크로 신청하시면 금방 들으실 수 있어요!
+> Q. 아무것도 모르는데 해커톤 참여할 수 있을까요?  
+> A. 해커톤에 참여하시는데 [클라우드 스킬 챌린지](https://aka.ms/hackers-ground/register/csc)를 진행하지 않으신 분들은 링크로 신청하시면 금방 들으실 수 있어요!
