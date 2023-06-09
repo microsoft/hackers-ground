@@ -73,7 +73,11 @@
   <br/>
 
   <a href="https://www.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo" target="_blank" title="Microsoft 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-microsoft-cropped.png?raw=true" alt="Microsoft 로고" width="251"/></a>&nbsp;
+<<<<<<< HEAD
   <a href="https://www.knu.ac.kr" target="_blank" title="Microsoft 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-knu.png?raw=true" alt="경북대학교 로고" width="210"/></a>
+=======
+  <a href="https://www.knu.ac.kr" target="_blank" title="경북대학교 홈페이지"><img src="https://github.com/microsoft/hackers-ground/blob/main/assets/logo-knu.png?raw=true" alt="경북대학교 로고" width="210"/></a>
+>>>>>>> 642fe9b342dc4b59a01d30ecffa66090dfc5077d
 </div>
 
 ## 🥑 주관
