@@ -1,6 +1,7 @@
 # 해커그라운드 해커톤 등록 환영
 
-해커그라운드 해커톤에 신청해주셔 감사합니다!  
+안녕하세요, {{ NAME }}님! 해커그라운드 해커톤에 등록해 주셔서 감사합니다!  
+
 **해커그라운드**는 대구/경북 지역의 청년 개발자들과 함께 [Microsoft 애저 클라우드](https://azure.microsoft.com/ko-kr?WT.mc_id=dotnet-91712-juyoo)를 활용해 당면한 지역의 현안 문제를 해결하는 해커톤입니다.
 
 ## ⏰ 해커그라운드 해커톤 일정 및 장소
@@ -25,18 +26,20 @@
 ### 사전 팀빌딩 이벤트
 
 본 행사 전부터 사전 팀빌딩을 진행할 수 있습니다.
-* 팀장으로 리딩하고 싶으시다면 [디스코드 "주제" 채널](https://aka.ms/hg/discord)을 통해 주제 포스트를 올리고, 원하는 직무의 팀원을 구하시면 됩니다.
-* 팀원으로 팔로잉하고 싶으시다면 [디스코드 직무별 채널](https://aka.ms/hg/discord)을 통해 자기 소개와 직무를 작성하고 원하는 주제 포스트에 댓글을 작성하시면 됩니다.
 
-   ![모집 중인 팀 예시](https://github.com/microsoft/hackers-ground/blob/main/assets/discord_team_recruiting_end.jpg?raw=true)
+- 팀장으로 리딩하고 싶으시다면 [디스코드 "주제" 채널](https://aka.ms/hg/discord)을 통해 주제 포스트를 올리고, 원하는 직무의 팀원을 구하시면 됩니다.
+- 팀원으로 팔로잉하고 싶으시다면 [디스코드 직무별 채널](https://aka.ms/hg/discord)을 통해 자기 소개와 직무를 작성하고 원하는 주제 포스트에 댓글을 작성하시면 됩니다.
 
-   ![모집 완료된 팀 예시](https://github.com/microsoft/hackers-ground/blob/main/assets/discord_team_recruiting_end.jpg?raw=true)
+  ![모집 중인 팀 예시](https://github.com/microsoft/hackers-ground/blob/main/assets/discord_team_recruiting_end.jpg?raw=true)
+
+  ![모집 완료된 팀 예시](https://github.com/microsoft/hackers-ground/blob/main/assets/discord_team_recruiting_end.jpg?raw=true)
 
 ### 본 행사 팀빌딩 일정
 
 본 행사에선 6/21(수) 12:00~16:30까지 팀빌딩을 진행합니다.
-* 행사장에서 디스코드를 활용해 팀장과 팀원들이 질의하고, 이야기를 나눈 뒤 팀장이 팀별 리크루팅을 확정하고 자리를 안내 받습니다.(사전 팀빌딩때 팀별 리크루팅이 확정된 팀은 조직위원회에서 자리를 안내해드릴 예정입니다.)
-* 팀빌딩이 어려우신 분들의 경우 조직위원회에서 도와드릴 예정입니다.(15:30 팀빌딩 헬프타임 등)
+
+- 행사장에서 디스코드를 활용해 팀장과 팀원들이 질의하고, 이야기를 나눈 뒤 팀장이 팀별 리크루팅을 확정하고 자리를 안내 받습니다.(사전 팀빌딩때 팀별 리크루팅이 확정된 팀은 조직위원회에서 자리를 안내해드릴 예정입니다.)
+- 팀빌딩이 어려우신 분들의 경우 조직위원회에서 도와드릴 예정입니다.(15:30 팀빌딩 헬프타임 등)
 
 ## 💻 해커그라운드 해커톤 사전 핸즈온랩 세션
 
@@ -75,9 +78,7 @@
 - 최우수상 (총 2팀): Xbox 디아블로4 에디션
 - 우수상 (총 3팀): 40만원 상당 상품
 
-
 > 상품 관련 세부 사항은 예고 없이 달라질 수 있습니다.
-
 
 ## QnA
 
