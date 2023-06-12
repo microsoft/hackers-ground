@@ -17,8 +17,7 @@
 
 아래는 팀원 정보입니다.
 
-- 팀장: [{{ LEADER_NAME }}](https://github.com/{{ LEADER_GITHUB_ID }})
-- 팀원: [{{ MEMBER_NAME_1 }}](https://github.com/{{ MEMBER_GITHUB_ID_1 }}), [{{ MEMBER_NAME_2 }}](https://github.com/{{ MEMBER_GITHUB_ID_2 }}), [{{ MEMBER_NAME_3 }}](https://github.com/{{ MEMBER_GITHUB_ID_3 }})
+{{ MEMBERS }}
 
 ## 팀 리포지토리 정보
 

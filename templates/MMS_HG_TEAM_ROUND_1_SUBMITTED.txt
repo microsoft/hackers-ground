@@ -13,8 +13,7 @@
 
 아래는 팀원 정보입니다.
 
-- 팀장: https://github.com/{{ LEADER_GITHUB_ID }}
-- 팀원: https://github.com/{{ MEMBER_GITHUB_ID_1 }}, https://github.com/{{ MEMBER_GITHUB_ID_2 }}, https://github.com/{{ MEMBER_GITHUB_ID_3 }}
+{{ MEMBERS }}
 
 아래는 여러분이 해커그라운드 해커톤 기간동안 사용하실 팀 리포지토리입니다.
 
