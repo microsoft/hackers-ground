@@ -1,15 +1,25 @@
-# `{{ TEAM_NAME }}`팀 팀빌딩 완료
+# "{{ TEAM_NAME }}"팀 팀빌딩 완료
 
 안녕하세요, {{ NAMES }}님.
 
-{{ TEAM_NAME }}팀 팀빌딩을 완료했습니다.
+------
+
+아직 "{{ TEAM_NAME }}"팀의 총 구성원 모두 팀빌딩을 완료하지 않았습니다. 팀빌딩을 완료하지 못한 경우는 아래의 둘 중 한가지입니다.
+
+- 팀원중 GitHub ID를 확인할 수 없는 사람이 있습니다.
+- 팀원중 체크인하지 않은 사람이 있습니다.
+
+다시 한 번 팀빌딩을 완료해주세요. 팀빌딩을 완료하지 않으면, 팀 전체에게 불이익이 있습니다.
+
+------
+
+"{{ TEAM_NAME }}"팀 팀빌딩을 완료했습니다.
 
 ## 팀원 정보
 
 아래는 팀원 정보입니다.
 
-- 팀장: [{{ LEADER_NAME }}](https://github.com/{{ LEADER_GITHUB_ID }})
-- 팀원: [{{ MEMBER_NAME_1 }}](https://github.com/{{ MEMBER_GITHUB_ID_1 }}), [{{ MEMBER_NAME_2 }}](https://github.com/{{ MEMBER_GITHUB_ID_2 }}), [{{ MEMBER_NAME_3 }}](https://github.com/{{ MEMBER_GITHUB_ID_3 }})
+{{ MEMBERS }}
 
 ## 팀 리포지토리 정보
 
