@@ -25,4 +25,4 @@
 ------
 "{{ TEAM_NAME }}"팀 주제 제출을 완료했습니다.
 
-제출 완료 시각은 {{ DATE_SUBMITTED }} 입니다.
+제출 완료 시각은 "{{ DATE_SUBMITTED }}" 입니다.
