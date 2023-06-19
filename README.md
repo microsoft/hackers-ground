@@ -1,5 +1,9 @@
 👉 **[For English](./README.en.md)** 👈
 
+**클라우드 스킬 챌린지 행사 종료했습니다. 해커톤 이벤트는 [https://hackersground.kr](https://hackersground.kr)를 참조해 주세요**
+
+> 경품 수상자는 [https://hackersground.kr](https://hackersground.kr)에서 공개될 예정입니다.
+
 # 해커런 &ndash; 해커그라운드
 
 <div style="text-align: center;">
